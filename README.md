@@ -1,9 +1,23 @@
-# Import CVS files into cassandra form an S3 bucket using spark
+# Import CVS files with spark
+This short example will show to you how easily is to import CSV files from your AWS S3 buckets 
+using spark into cassandra.
 
 ## Setting up your applicaiton
 Clone this repository `git clone http://gitlab.ippon.fr/mthebault/simplecsvexportspark.git`
 Open the file 'src/main/ressources/project.conf' and change your settings.
-Don't forget to change the IP/Port of the cassandra Host
+
+**You need to change the following values:**
+
+- Cassandra
+    - host
+    - port
+    - keyspace
+    - table
+- AWS
+    - accessKey
+    - secretKey
+    - bucket
+    - fileName
 
 ## Build a jar
 To build the Jar of your this application you just need to run the command `sbt clean assembly`
