@@ -26,7 +26,7 @@ To build the Jar of your this application you just need to run the command `sbt 
 To deploy a jar on a spark cluster you have to make sure you have the port 7077 accessible from the outside.
 You have to push this Jar to a S3 public bucket `aws s3 cp ./target/scala-2.10/ImportCSV.jar s3://YOUR_BUCKET/ImportCVS.jar`
 
-Once you have done that, you just need to run the spark-submit command as following:
+***Once you have done that, you just need to run the spark-submit command as following:***
 ```
 $SPARK_HOME/bin/spark-submit \
 	--verbose \
@@ -36,3 +36,6 @@ $SPARK_HOME/bin/spark-submit \
 	--class Application \
 	https://s3-eu-west-1.amazonaws.com/YOUR_BUCKET/ImportCSV.jar
 ```
+
+## Next
+If you want to contribute to this project feel free to do it, if you see some mistake please leave me an issue.
