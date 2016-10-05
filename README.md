@@ -37,5 +37,9 @@ $SPARK_HOME/bin/spark-submit \
 	https://s3-eu-west-1.amazonaws.com/YOUR_BUCKET/ImportCSV.jar
 ```
 
+***Note: ***
+ Here I am using a public s3 bucket for the jars. If you want to use your private buckets you can use the following link:
+ `http://AWS_S3_ACCESS_KEY:AWS_S3_SECRET_KEY@YOUR_BUCKET/ImportCSV.jar` 
+ please be aware of the http link have to be formatted [you can use this website to format the link](http://www.freeformatter.com/url-encoder.html)
 ## Next
 If you want to contribute to this project feel free to do it, if you see some mistake please leave me an issue.
