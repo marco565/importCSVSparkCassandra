@@ -14,7 +14,7 @@ object Application {
 
     //setup some configuration elements
     val sparkConfiguration = new SparkConf()
-      .setAppName("playAroundCassandra")
+      .setAppName("importCSV")
       .set("spark.event.Log.enabled", conf.getString("spark.eventLog.enabled"))
       .set("spark.serializer", conf.getString("spark.serializer"))
       .set("spark.driver.memory", conf.getString("spark.driver.memory"))
